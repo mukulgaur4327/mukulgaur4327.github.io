@@ -1,0 +1,106 @@
+<div class="container-fluid">
+  <div class="row topLogo">
+    <div class="d-flex justify-content-between mt-3 top-header-div">
+      <img src="assets/images/finservLogo.png" class="img-fluid">
+      <div class="d-flex align-items-center ">
+        <div class="d-flex align-items-center">
+          <button class="btn text-white border border-1 fs-small">
+            Help & Supports
+          </button>
+          <span class="border border-right ms-3 my-auto border-secondary vertical-line-logo"></span>
+        </div>
+        <div class="d-flex mx-2">
+          <div class="d-flex flex-column justify-content-center align-items-center mx-2 text-white fs-small">
+            <span class="text-center">John Due</span>
+            <a class="text-small  text-white">Logout</a>
+          </div>
+          <img src="assets/images/logoutIcon.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center overlap-div">
+      <div class="card header-card">
+        <div class="card-body">
+          <form class="row align-items-center g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">From Date</label>
+              <input type="date" class="form-control" id="validationCustom01" value="Mark" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">To Date</label>
+              <input type="date" class="form-control" id="validationCustom02" value="Otto" required>
+
+            </div>
+            <div class="col-12 col-md-4 text-center align-self-end">
+              <button class="btn btn-danger-custom w-75" type="submit">View</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-around marginHeader">
+    <div class="col-md-6 col-lg-3 col-12 my-2" *ngFor="let report of reportList">
+      <mat-card [ngClass]="report.customClass" class="w-80 mx-auto">
+        <mat-card-header class="d-flex justify-content-center">
+          <mat-card-title class="fs-6">{{report.name}}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="d-flex justify-content-center mt-2">{{report.content}}</mat-card-content>
+      </mat-card>
+
+    </div>
+  </div>
+  <div class="d-flex justify-content-center flex-column align-items-center fs-3 mt-4 mb-2">
+
+    <span>
+      Management
+    </span>
+    <span class="mt-2">
+      <img src="assets/images/managementline.png" alt="">
+    </span>
+
+  </div>
+
+  <div class="row justify-content-around cardbckground   mt-2">
+
+    <div class="col-md-6 col-lg-3 col-12 mt-4  mb-2" *ngFor="let list of managementList">
+      <mat-card [ngClass]="list.customDesign" class="mx-auto">
+        <mat-card-header class="d-flex justify-content-center">
+
+          <img [src]="list.logo" class="img-fluid" alt="" />
+
+
+        </mat-card-header>
+        <mat-card-content class="text-center  my-3"><span class="fw-bold">{{list.name}}</span>
+          <br>Management</mat-card-content>
+        <mat-card-footer class="text-center my-2">
+          <a [routerLink]="list.redirectLink" class="fs-18" [ngStyle]="{color: list.customColor}">View
+            Details</a>
+        </mat-card-footer>
+
+      </mat-card>
+
+    </div>
+    <div class="col-12 col-md-6 my-2 mb-4 " *ngFor="let report of managementCard">
+      <mat-card [ngClass]="report.cardDesign" class="w-80 mx-auto mt-4">
+        <div class="d-flex  justify-content-center">
+          <div class="w-50 position-relative">
+            <img [src]="report.bgImage" class="img-fluid" alt="">
+            <img [src]="report.logo" class="img-fluid logoOver" alt="">
+          </div>
+          <div class="d-flex justify-content-center align-items-center flex-column w-50 ">
+            <div class="d-flex flex-column justify-content-center align-items-center ">
+              <span class="fw-bold">{{report.name}}</span>
+              <span> Management</span>
+            </div>
+            <a [routerLink]="report.redirectLink" class="fs-18 mt-2" [ngStyle]="{color: report.customColor}">View
+              Details</a>
+          </div>
+        </div>
+
+      </mat-card>
+
+    </div>
+  </div>
+  <!-- Array for Management card -->

@@ -1,0 +1,639 @@
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar-custom collapse" [ngClass]="IsCollapsed?'sideCollaped':''">
+    <div class=" position-sticky p-1">
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <span class="side-header-text"> Dashboard Menu</span>
+            <img src="assets/images/menu_icon.png" alt="" (click)="IsCollapsed=!IsCollapsed">
+        </div>
+        <div id="accordion">
+
+            <!-- Menu start--- -->
+
+            <a href="#"
+                class="list-group-item list-group-item-action py-2 custom-list ripple collapsed menu-bottom no-border"
+                data-bs-toggle="collapse" data-bs-target="#components-collapse-1" aria-expanded="false"
+                aria-current="true">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div [ngClass]="IsCollapsed?'onlyIcon':''">
+                        <img src="assets/images/masterMgmtIcon.png" class="mx-2 img-fluid" alt="">
+                        <span>Masters Management</span>
+
+                    </div>
+                </div>
+            </a>
+            <div class="collapse" id="components-collapse-1" data-bs-parent="#accordion">
+                <a href="#" class="list-group-item list-group-item-action p-2 custom-list ripple collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#components-collapse-1-sub" aria-expanded="false"
+                    aria-current="true">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <img src="assets/images/customerDetails1.png" class="mx-2 img-fluid custom-menu-items"
+                                alt=""><span>Customer Details
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse" id="components-collapse-1-sub">
+                    <ul class="fw-normal list-unstyled  pb-1 custom-line">
+                        <li>
+                            <a [ngClass]="IsCollapsed?'onlyIcon':''" routerLink="pages/customer" aria-current="false"
+                                class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple sub-menu">
+                                <div>
+                                    <img src="assets/images/prifixName.png" class="mx-2 img-fluid custom-menu-items"
+                                        alt=""><span>Prefix of Name
+                                    </span>
+                                </div>
+
+
+
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="pages/customer"
+                                class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple sub-menu">
+
+                                <div>
+                                    <img src="assets/images/customerType.png" class="mx-2 img-fluid custom-menu-items"
+                                        alt=""><span>Customer Type
+                                    </span>
+                                </div>
+
+
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink=""
+                                class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+
+                                <div>
+                                    <img src="assets/images/occupation1.png" class="mx-2 img-fluid custom-menu-items"
+                                        alt=""><span>Occupation
+                                    </span>
+                                </div>
+
+
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink=""
+                                class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                                <div>
+                                    <img src="assets/images/caste1.png" class="mx-2 img-fluid custom-menu-items"
+                                        alt=""><span>Caste
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink=""
+                                class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                                <div>
+                                    <img src="assets/images/relation.png" class="mx-2 img-fluid custom-menu-items"
+                                        alt=""><span>Relationship
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <ul class="fw-normal list-unstyled custom-line pb-1  ">
+
+                        </ul>
+
+
+                    </ul>
+                    <a href="#" class="list-group-item list-group-item-action p-2 custom-list ripple collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#components-collapse-2-sub" aria-expanded="false"
+                        aria-current="true">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="assets/images/customerDetails1.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span>Address
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="components-collapse-2-sub">
+                        <ul class="fw-normal list-unstyled  pb-1 custom-line">
+                            <li>
+                                <a [ngClass]="IsCollapsed?'onlyIcon':''" routerLink="pages/customer"
+                                    aria-current="false"
+                                    class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple sub-menu">
+                                    <div>
+                                        <img src="assets/images/country1.png" class="mx-2 img-fluid custom-menu-items"
+                                            alt=""><span>Country
+                                        </span>
+                                    </div>
+
+
+
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="pages/customer"
+                                    class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple sub-menu">
+
+                                    <div>
+                                        <img src="assets/images/states.png" class="mx-2 img-fluid custom-menu-items"
+                                            alt=""><span>State
+                                        </span>
+                                    </div>
+
+
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink=""
+                                    class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+
+                                    <div>
+                                        <img src="assets/images/distict.png" class="mx-2 img-fluid custom-menu-items"
+                                            alt=""><span>Distict
+                                        </span>
+                                    </div>
+
+
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink=""
+                                    class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                                    <div>
+                                        <img src="assets/images/Taluka.png" class="mx-2 img-fluid custom-menu-items"
+                                            alt=""><span>Taluka
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink=""
+                                    class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                                    <div>
+                                        <img src="assets/images/citi.png" class="mx-2 img-fluid custom-menu-items"
+                                            alt=""><span>City
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink=""
+                                    class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                                    <div>
+                                        <img src="assets/images/area1.png" class="mx-2 img-fluid custom-menu-items"
+                                            alt=""><span>Area
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <ul class="fw-normal list-unstyled custom-line pb-1  ">
+
+                            </ul>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!---Address Menu End---- -->
+
+
+
+
+
+
+            </div>
+
+            <!-- Menu start--- -->
+
+            <a href="#" class="list-group-item list-group-item-action py-2 custom-list ripple collapsed menu-bottom"
+                data-bs-toggle="collapse" data-bs-target="#components-collapse-2" aria-expanded="false"
+                aria-current="true">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <img src="assets/images/customerIcon.png" class="mx-2 img-fluid" alt="">
+                        <span>Customer Management</span>
+                    </div>
+                </div>
+            </a>
+            <div class="collapse" id="components-collapse-2" data-bs-parent="#accordion">
+
+
+                <ul class="fw-normal list-unstyled custom-line pb-1 ">
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/customerList.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span>Customer List
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/documents.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span>Document
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/photos.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span>Photo & Signs
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/status1.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span>Status
+                                </span>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/bankAccount.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span>Bank Account Management
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <ul class="fw-normal list-unstyled custom-line pb-1 ">
+
+                    </ul>
+
+
+                </ul>
+
+            </div>
+            <!-- Menu End-- -->
+            <!-- Menu start--- -->
+
+            <a href="#" class="list-group-item list-group-item-action py-2 custom-list ripple collapsed menu-bottom"
+                data-bs-toggle="collapse" data-bs-target="#components-collapse-3" aria-expanded="false"
+                aria-current="true">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <img src="assets/images/accountmgmtIcon.png" class="mx-2 img-fluid custom-menu-items"
+                            alt=""><span>Account
+                            Management</span>
+                    </div>
+                </div>
+            </a>
+            <div class="collapse" id="components-collapse-3" data-bs-parent="#accordion">
+
+
+                <ul class="fw-normal list-unstyled custom-line pb-1 ">
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/accountOpening.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span>Account
+                                    Opening
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+
+                            <div>
+                                <img src="assets/images/accountmaintain.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span>Account
+                                    Maintainence
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/colateral.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span>
+                                    Collateral Linking
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/goldAdd.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span>
+                                    Gold Add & Release
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/intrestRate.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span>Account Intrest Rate
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <ul class="fw-normal list-unstyled custom-line pb-1 ">
+
+                    </ul>
+
+
+                </ul>
+
+            </div>
+            <!-- Menu End-- -->
+            <!-- Menu start--- -->
+
+            <a href="#" class="list-group-item list-group-item-action py-2 custom-list ripple collapsed menu-bottom"
+                data-bs-toggle="collapse" data-bs-target="#components-collapse-4" aria-expanded="false"
+                aria-current="true">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <img src="assets/images/transitionIcon.png" class="mx-2 img-fluid" alt=""><span>Transition
+                            Management</span>
+                    </div>
+                </div>
+            </a>
+            <div class="collapse" id="components-collapse-4" data-bs-parent="#accordion">
+
+                <ul class="fw-normal list-unstyled custom-line pb-1 ">
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/disbursment.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span class="mx-2">
+                                    Disbursement
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/installment.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span class="mx-2">
+                                    Installment Payment
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/loanAccount.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span class="mx-2">
+                                    Loan Account Closure
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/loanStatement.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span class="mx-2">
+                                    Loan Statement
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/GLreceipt.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span class="mx-2">
+                                    GL Receipt & Payment
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <div>
+                                <img src="assets/images/transitionEnquiry.png" class="mx-2 img-fluid custom-menu-items"
+                                    alt=""><span class="mx-2">
+                                    Transaction Enquiry
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <ul class="fw-normal list-unstyled custom-line pb-1 ">
+
+                    </ul>
+
+
+                </ul>
+
+            </div>
+            <!-- Menu End-- -->
+            <!-- Menu start--- -->
+
+            <a href="#" class="list-group-item list-group-item-action py-2 custom-list ripple collapsed menu-bottom"
+                data-bs-toggle="collapse" data-bs-target="#components-collapse-5" aria-expanded="false"
+                aria-current="true">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <img src="assets/images/reportIcon.png" class="mx-2 img-fluid" alt=""><span>Report
+                            Management</span>
+                    </div>
+                </div>
+            </a>
+            <!-- <div class="collapse" id="components-collapse-1" data-bs-parent="#accordion">
+            <a href="#" class="list-group-item list-group-item-action ms-3 py-2 custom-list ripple collapsed"
+                data-bs-toggle="collapse" data-bs-target="#components-collapse-1-sub" aria-expanded="false"
+                aria-current="true">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="headColor">
+                        <i class="fa-solid fa-file-lines me-3"></i><span>Account Opening</span>
+                    </div>
+                </div>
+            </a>
+            <div class="collapse" id="components-collapse-1-sub">
+                <ul class="fw-normal list-unstyled custom-line pb-1 ">
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple"><i
+                                class="fa-solid fa-tag me-3"></i>
+                            Account Maintainence</a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple"><i
+                                class="fa-solid fa-user-group me-3"></i>
+                            Collateral Linking</a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple"><i
+                                class="fa-solid fa-briefcase me-3"></i>
+                            Gold Add & Release</a>
+                    </li>
+                    <li>
+                        <a routerLink=""
+                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                            <i class="fa-regular fa-user me-3"></i>
+                            Account Intrest Rate Maintainence</a>
+                    </li>
+
+
+                    <ul class="fw-normal list-unstyled custom-line pb-1 ">
+
+                    </ul>
+
+
+                </ul>
+            </div>
+        </div> -->
+            <!-- Menu End-- -->
+            <!-- Menu start--- -->
+
+            <a href="#" class="list-group-item list-group-item-action py-2 custom-list ripple collapsed menu-bottom"
+                data-bs-toggle="collapse" data-bs-target="#components-collapse-6" aria-expanded="false"
+                aria-current="true">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <img src="assets/images/goldreceiptIcon.png" class="mx-2 img-fluid" alt=""><span>Gold Receipt
+                            Copy</span>
+                    </div>
+                </div>
+            </a>
+            <!-- <div class="collapse" id="components-collapse-1" data-bs-parent="#accordion">
+                    <a href="#" class="list-group-item list-group-item-action ms-3 py-2 custom-list ripple collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#components-collapse-1-sub" aria-expanded="false"
+                        aria-current="true">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="headColor">
+                                <i class="fa-solid fa-file-lines me-3"></i><span>Account Opening</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="collapse" id="components-collapse-1-sub">
+                        <ul class="fw-normal list-unstyled custom-line pb-1 ">
+                            <li>
+                                <a routerLink=""
+                                    class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple"><i
+                                        class="fa-solid fa-tag me-3"></i>
+                                    Account Maintainence</a>
+                            </li>
+                            <li>
+                                <a routerLink=""
+                                    class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple"><i
+                                        class="fa-solid fa-user-group me-3"></i>
+                                    Collateral Linking</a>
+                            </li>
+                            <li>
+                                <a routerLink=""
+                                    class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple"><i
+                                        class="fa-solid fa-briefcase me-3"></i>
+                                    Gold Add & Release</a>
+                            </li>
+                            <li>
+                                <a routerLink=""
+                                    class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                                    <i class="fa-regular fa-user me-3"></i>
+                                    Account Intrest Rate Maintainence</a>
+                            </li>
+        
+        
+                            <ul class="fw-normal list-unstyled custom-line pb-1 ">
+        
+                            </ul>
+        
+        
+                        </ul>
+                    </div>
+                </div> -->
+            <!-- Menu End-- -->
+            <!-- Menu start--- -->
+
+            <a href="#" class="list-group-item list-group-item-action py-2 custom-list ripple collapsed menu-bottom"
+                data-bs-toggle="collapse" data-bs-target="#components-collapse-7" aria-expanded="false"
+                aria-current="true">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <img src="assets/images/helpmgmtIcon.png" class="mx-2 img-fluid" alt=""><span>Help &
+                            Support</span>
+                    </div>
+                </div>
+            </a>
+            <!-- <div class="collapse" id="components-collapse-1" data-bs-parent="#accordion">
+                            <a href="#" class="list-group-item list-group-item-action ms-3 py-2 custom-list ripple collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#components-collapse-1-sub" aria-expanded="false"
+                                aria-current="true">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="headColor">
+                                        <i class="fa-solid fa-file-lines me-3"></i><span>Account Opening</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="collapse" id="components-collapse-1-sub">
+                                <ul class="fw-normal list-unstyled custom-line pb-1 ">
+                                    <li>
+                                        <a routerLink=""
+                                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple"><i
+                                                class="fa-solid fa-tag me-3"></i>
+                                            Account Maintainence</a>
+                                    </li>
+                                    <li>
+                                        <a routerLink=""
+                                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple"><i
+                                                class="fa-solid fa-user-group me-3"></i>
+                                            Collateral Linking</a>
+                                    </li>
+                                    <li>
+                                        <a routerLink=""
+                                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple"><i
+                                                class="fa-solid fa-briefcase me-3"></i>
+                                            Gold Add & Release</a>
+                                    </li>
+                                    <li>
+                                        <a routerLink=""
+                                            class="d-inline-flex align-items-center rounded list-group-item list-group-item-action custom-list ripple">
+                                            <i class="fa-regular fa-user me-3"></i>
+                                            Account Intrest Rate Maintainence</a>
+                                    </li>
+                
+                
+                                    <ul class="fw-normal list-unstyled custom-line pb-1 ">
+                
+                                    </ul>
+                
+                
+                                </ul>
+                            </div>
+                        </div> -->
+            <!-- Menu End-- -->
+
+        </div>
+    </div>
+</nav>

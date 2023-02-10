@@ -1,0 +1,199 @@
+<div class="container-fluid">
+  <div class="row mt-4">
+    <div class="col-3">
+    </div>
+
+    <div class="col-9  ">
+      <!-- section for back button  -->
+      <div class="row">
+        <div class="d-flex  flex-wrap mt-3">
+          <i class="material-icons" style="color: black;">arrow_back</i>
+          <h3 class="heading mb-2">Account Opening</h3>
+        </div>
+        <mat-divider></mat-divider>
+      </div>
+      <!-- end -->
+
+      <!-- row for account opening section -->
+      <div class="row mt-2">
+        <div class="row">
+          <!-- section for scheme name dropdown -->
+          <div class="col-4 matFormField">
+            <label class="label">Scheme Name <span class="astrick">*</span></label>
+            <div class="form-group mt-2 ">
+              <select required id="Filter" name="filter" class="form-select form-control">
+                <option value="">Select your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- section for date open input -->
+          <div class="col-4 ">
+            <label class="label">Date Open</label>
+            <div class=" form-group  mt-2">
+              <input type="text" class="form-control calenderIcon bg-white" id="dateId2" aria-describedby="date"
+                placeholder="Please select Date" name="toDate" #fromdate="ngModel" [(ngModel)]="fromDate" [bsConfig]="{
+            showWeekNumbers: false,
+            dateInputFormat: 'DD-MM-YYYY',
+            selectFromOtherMonth: true
+          }" bsDatepicker readonly />
+            </div>
+          </div>
+          <!-- end -->
+
+          <!-- section for loan classification -->
+          <div class="col-4 ">
+            <label class="label">Loan Classification </label>
+            <div class="form-group  mt-2">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--  -->
+
+      <!-- row for customer details -->
+      <div class="row mt-5">
+        <div class="row">
+          <div class="col-7 col-md-6">
+            <h3 class="heading mb-0">Customer Details</h3>
+          </div>
+        </div>
+
+        <div class="tableDiv mt-3">
+          <div class="mat-elevation-z1 table-responsive">
+            <table>
+              <tr>
+                <th>Customer ID </th>
+                <th>Customer Name</th>
+                <th>Relationship</th>
+                <th>Action</th>
+              </tr>
+              <tr>
+                <td>100010001</td>
+                <td>Hemant Agarwal</td>
+                <td>Single Ownership</td>
+                <td><button>edit</button> <button>Delete</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <div><input type="text" class="form-control "></div>
+                </td>
+                <td>
+                  <div><input type="text" class="form-control "></div>
+                </td>
+                <td>
+                  <div> <select required id="Filter" name="filter" class="form-select form-control">
+                      <option value="">Select your option</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select></div>
+                </td>
+                <td>
+                  <div>
+                    <button>add</button>
+                    <button>cancel</button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+      </div>
+      <!-- end -->
+
+      <!-- row for nominee details -->
+      <div class="row mt-5">
+        <div class="row">
+          <div class="col-7 col-md-6">
+            <h3 class="heading mb-0">Nominee Details</h3>
+          </div>
+        </div>
+        <div class="tableDiv mt-3">
+          <div class="mat-elevation-z1 table-responsive">          
+            <table>
+              <tr>
+                <th>Customer ID </th>
+                <th>Nominee Name</th>
+                <th>DOB</th>
+                <th>Relationship</th>
+                <th>Action</th>
+              </tr>
+              <tr>
+                <td>100010001</td>
+                <td>Atul Agarwal</td>
+                <td>10/12/1998</td>
+                <td>Brother</td>
+                <td><button>edit</button> <button>Delete</button></td>
+              </tr>
+              <tr >
+                <td>
+                  <div><input type="text" class="form-control "></div>
+                </td>                
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- section for last input row-->
+      <div class="row mt-5">
+        <div class="row">
+          <div class="col-4">
+            <label>Period Unit <span class="astrick">*</span></label>
+            <div class="form-group mt-2 ">
+              <select required id="Filter" name="filter" class="form-select form-control">
+                <option value="">Select your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-4">
+            <label>Loan Period <span class="astrick">*</span></label>
+            <div class="form-group mt-2">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter">
+            </div>
+          </div>
+          <div class="col-4">
+            <label>Loan Tenure Date <span class="astrick">*</span></label>
+            <div class="form-group mt-2">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-4">
+            <label>Operating Instruction <span class="astrick">*</span></label>
+            <div class="form-group mt-2">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter">
+            </div>
+          </div>
+          <div class="col-4">
+            <label> Purpose <span class="astrick">*</span></label>
+            <div class="form-group mt-2">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+
+      <div class="row mt-4">
+        <div class="d-flex justify-content-end flex-wrap">
+          <button class="btnSave" mat-raised-button>Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

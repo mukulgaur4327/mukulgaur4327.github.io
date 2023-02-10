@@ -1,0 +1,446 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.cursorStyle {
+    cursor: pointer;
+}
+
+.edit-icon {
+    height: 29px;
+    margin-right: 13px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.delete-icon {
+    height: 29px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+/* Customize the label (the container) */
+.checkboxContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #222326;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background: #FFFFFF;
+    border: 1px solid #92969b;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    margin-top: 13px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxContainer:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxContainer input:checked~.checkmark {
+    background-color: #910100;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxContainer input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxContainer .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.back-button {
+    border-radius: 10px !important;
+    /* background-color: #910100 !important; */
+    margin-left: 87%;
+    color: black !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 15px !important;
+    max-width: 150px;
+    width: 100%;
+    margin-top: 3%;
+}
+
+
+
+.btnSave {
+    border-radius: 10px !important;
+    background-color: #910100 !important;
+    margin-left: 87%;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 15px !important;
+    max-width: 150px;
+    width: 100%;
+}
+
+.heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #323232;
+}
+
+.label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #323232;
+}
+
+.astrick {
+    color: red;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.sidebar {
+    /* z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto; */
+    /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+    background-color: #FFF3D9;
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 12px;
+}
+
+.sidebar p {
+    padding: 20px 24px 20px 15px;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.sidebar div {
+    display: flex;
+    justify-content: initial;
+}
+
+/* .sidebar div:first-child {
+} */
+
+.sidebar img {
+    height: 20px;
+    margin-top: 17px;
+    margin-left: 10px;
+}
+
+.masters-management {
+    color: #910100;
+    border-bottom: 1px solid #910100;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.nav-sidebar li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.sidebar div:hover {
+    background-color: #910100;
+    color: white;
+    border-radius: 5px;
+}
+
+.masters-management-data .img-top {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+
+.masters-management-data:hover .img-top {
+    display: inline;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.back-btn {
+    color: white !important;
+    background: #910100 !important;
+    border-radius: 5px;
+    width: 144px;
+    height: 52px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.add-btn {
+    background: #910100 !important;
+    border-radius: 5px;
+    color: white !important;
+    width: 144px;
+    height: 52px;
+    margin-left: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.search-box {
+    background: #FFFFFF;
+    border: 1px solid #D4C4C4;
+    border-radius: 5px;
+    color: black;
+    width: 283px;
+    height: 52px;
+}
+
+.table-with-content-heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 11px;
+}
+
+table th {
+    background-color: #323232 !important;
+    color: white !important;
+}
+
+
+.table-responsive {
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+
+td {
+    padding: 14px 8px 8px 12px !important;
+}
+
+.edit-button {
+    border-style: none;
+    background: none;
+}
+
+.delete-button {
+    border-style: none;
+    background: none;
+}
+
+.edit-button-icon {
+    color: white;
+    background: #910100;
+    border-radius: 6px;
+}
+
+.delete-button-icon {
+    color: white;
+    background: black;
+    border-radius: 5px;
+}
+
+hr {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.editBtn {
+    background: #FAE4E3;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    margin: 5px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    background: #DBDADA;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    margin: 5px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.addBtnLink {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #323232;
+    padding: 5px 18px;
+    text-decoration: none;
+}
+
+.cancelBtnLink {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #910100;
+    padding: 5px 18px;
+    text-decoration: none;
+}
+
+.tableDiv tr th {
+    min-width: 245px;
+}
+
+.myTable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: #F6F5F5;
+}
+
+th {
+    background-color: #323232;
+    color: white;
+    padding: 10px;
+    height: 50px;
+}
+
+.table-columns-data:nth-child(odd) {
+    background: #FFFFFF;
+}
+
+.table-columns-data:nth-child(even) {
+    background: #F6F5F5;
+}
+
+.check-box {
+    height: 17px;
+    width: 17px;
+    /* border: 0.2px solid black !important; */
+    box-shadow: 0px 0.1px 2px 0px;
+}
+
+.common-table {
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden !important;   
+    
+}

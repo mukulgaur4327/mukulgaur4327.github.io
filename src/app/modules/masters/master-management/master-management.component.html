@@ -1,0 +1,77 @@
+
+<div class="container">
+
+    <!-- <div class="col-sm-3 col-md-2 sidebar" app-master-side-bar></div> -->
+    <div class="d-flex">
+
+        
+        <!-- <div class="col-sm-3 col-md-2 sidebar justify-content-center">
+            <p class="masters-management">Masters Management</p>
+            <div class="masters-management-data" *ngFor="let obj of mastersMgmt">
+                <img [src]=obj.img>
+                <img [src]=obj.img2 class="img-top">
+                <p>{{obj.ptagValue}}</p>
+            </div>
+        </div> -->
+        <div class="col-10">
+            <div class="d-flex justify-content-end mt-11">
+                <button class="btn back-btn"><img src="assets/images/back-arrow.png" alt="back arrow"
+                        style="margin-right:7px" /> Back</button>
+            </div>
+            <hr>
+            <div class="row table-with-content mb-5">
+                <div class="col-5 table-with-content-heading">
+                    <p>Prefix of Name</p>
+                </div>
+                <div class="col-4">
+                    <input class="search-box" placeholder="Search by Name">
+                </div>
+                <div class="col-1 ">
+                    <button class="btn add-btn">+Add</button>
+                </div>
+            </div>
+            <!-- <div class="table-responsive"> -->
+            <table mat-table class="mat-elevation-z8 table" [dataSource]="dS">
+                <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+                <ng-container matColumnDef="position">
+                    <th mat-header-cell *matHeaderCellDef>S.No</th>
+                    <td mat-cell *matCellDef="let element; let i = index">
+                        {{ i + 1 }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="prefixName">
+                    <th mat-header-cell *matHeaderCellDef>Prefix Name</th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.prefixName? element.prefixName:"N/A" }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="isActive">
+                    <th mat-header-cell *matHeaderCellDef>isActive</th>
+                    <td mat-cell *matCellDef="let element">
+                        <label class="checkboxContainer login-checkbox-with-label">
+                            <input type="checkbox" (change)="onChange()">
+                            <span class="checkmark"></span>
+                        </label>
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Action">
+                    <th mat-header-cell *matHeaderCellDef>Action</th>
+                    <td mat-cell *matCellDef="let element">
+                        <img class="edit-icon" alt="edit" src="assets/images/edit.png">
+                        <img class="delete-icon" alt="delete" src="assets/images/delete.png">
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayColumns"></tr>
+            </table>
+            <!-- </div> -->
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,142 @@
+.mainLoginContainer {
+    position: relative;
+
+}
+
+.topLoginHeader {
+    background: #910100;
+    height: 170px;
+}
+
+.middleLoginHeader {
+    background: url('/assets/images/middle-login-banner.png') top center no-repeat;
+    height: 588px;
+
+}
+
+.logo {
+    padding: 24px 0px 150px;
+}
+
+.formDiv {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    margin-top: 15%;
+    float: none;
+    width: 500px;
+    height: 100%;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.12);
+}
+
+.signBtn {
+    width: fill;
+    border: 1px solid #910100;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    background-color: #910100;
+    color: #FFFFFF;
+    height: 38px;
+}
+
+
+
+.link {
+    align-content: center;
+}
+
+.card-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #910100;
+    font-weight: 600;
+    font-size: 28px;
+    padding: 0px;
+}
+
+.card-subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #323232 !important;
+    margin-top: 25px;
+    font-size: 24px;
+    padding: 0px;
+}
+
+
+
+.form-control {
+    text-indent: 20px;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.08);
+}
+
+.inputbox {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.inputbox i {
+    position: absolute;
+    left: 8px;
+    top: 12px;
+    color: #dadada;
+}
+
+.shoppingImg {
+    position: absolute;
+    left: 82%;
+    top: 2%;
+    opacity: 2;
+    max-width: 100%;
+    width: 53%;
+    z-index: 2;
+
+}
+
+.forgot-password {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #910101;
+}
+
+.text-login {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #323232;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .card {
+        width: 440px;
+    }
+}
+
+@media (max-width: 767px) {
+    .shoppingImg {
+        display: none;
+    }
+
+    .formDiv {
+        width: 95%;
+        top: 47%;
+    }
+
+    .topLoginHeader {
+        height: auto;
+    }
+
+    .logo {
+        padding: 15px 0px 100px;
+        text-align: center;
+    }
+}

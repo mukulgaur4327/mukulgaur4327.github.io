@@ -1,0 +1,26 @@
+.topLogo {
+    background: url("../../../../assets/images/header-bg.png");
+    background-blend-mode: darken;
+    mix-blend-mode: multiply;
+    border-radius: 9px 9px 0px 0px;
+    height: 125px;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+.top-header-div {
+    height: 35% !important;
+}
+
+.fs-small {
+    font-size: small !important;
+}
+
+.vertical-line-logo {
+    height: 1.5rem;
+}
+
+.headerText {
+    font-size: 20px;
+    color: white;
+}

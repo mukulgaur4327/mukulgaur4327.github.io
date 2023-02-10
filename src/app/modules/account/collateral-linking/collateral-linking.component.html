@@ -1,0 +1,189 @@
+<!-- <p>collateral-linking works!</p> -->
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-3">
+            <div class="sidebar">
+            </div>
+        </div>
+
+        <div class="col-9 ">
+            <!-- section for back button  -->
+            <div class="row">
+                <div class="d-flex justify-content-end flex-wrap">
+                    <button class="back-button" mat-raised-button><i class="material-icons">arrow_back</i>Back</button>
+                </div>
+                <mat-divider></mat-divider>
+            </div>
+            <div class="col-9 ">
+                <!-- section for back button  -->
+                <div class="row">
+                    <div class="d-flex justify-content-end flex-wrap">
+                        <button class="back-button" mat-raised-button><i
+                                class="material-icons">arrow_back</i>Back</button>
+                    </div>
+                    <mat-divider></mat-divider>
+                </div>
+                <!-- end -->
+
+
+                <!-- section for Collateral Linking  row-->
+                <div class="row mt-5">
+                    <div class="row">
+                        <div class="col-7 col-md-6">
+                            <h3 class="heading mb-0">Collateral Linking </h3>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4">
+                            <label>Account Number <span class="astrick">*</span></label>
+                            <div class="form-group mt-2">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <label>Name </label>
+                            <div class="form-group mt-2">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <label>Scheme Name </label>
+                            <div class="form-group mt-2">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4">
+                            <label>Loan Classification </label>
+                            <div class="form-group mt-2">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+
+                <!-- row for customer details -->
+                <div class="row mt-5">
+                    <div class="row">
+                        <div class="col-7 col-md-6">
+                            <h3 class="heading mb-0">Ornament Details</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="tableDiv mt-3">
+                            <div class="mat-elevation-z1 table-responsive">
+                                <table mat-table [dataSource]="dataSource1" class="mat-elevation-z8">
+
+                                    <ng-container matColumnDef="goldDescription">
+                                        <th mat-header-cell *matHeaderCellDef> Gold Description </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.goldDescription}} </td>
+                                    </ng-container>
+
+                                    <ng-container matColumnDef="items">
+                                        <th mat-header-cell *matHeaderCellDef> Number of Items </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.items}} </td>
+                                    </ng-container>
+
+                                    <ng-container matColumnDef="grossWeight">
+                                        <th mat-header-cell *matHeaderCellDef> Gross Weight(In Gram) </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.grossWeight}} </td>
+                                    </ng-container>
+
+                                    <ng-container matColumnDef="netWeight">
+                                        <th mat-header-cell *matHeaderCellDef> Net Weight (In Gram) </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.netWeight}} </td>
+                                    </ng-container>
+
+
+                                    <ng-container matColumnDef="pergramRate">
+                                        <th mat-header-cell *matHeaderCellDef> Per Gram Rate</th>
+                                        <td mat-cell *matCellDef="let element"> {{element.pergramRate}} </td>
+                                    </ng-container>
+
+
+                                    <ng-container matColumnDef="appraisalAmount">
+                                        <th mat-header-cell *matHeaderCellDef> Appraisal Amount </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.appraisalAmount}} </td>
+                                    </ng-container>
+
+                                    <ng-container matColumnDef="lendableAmount">
+                                        <th mat-header-cell *matHeaderCellDef> Lendable Amount </th>
+                                        <td mat-cell *matCellDef="let element"> {{element.lendableAmount}} </td>
+                                    </ng-container>
+
+                                    <ng-container matColumnDef="image">
+                                        <th mat-header-cell *matHeaderCellDef> Upload Gold Image</th>
+                                        <td mat-cell *matCellDef="let element"> {{element.image}} </td>
+                                    </ng-container>
+
+
+                                    <ng-container matColumnDef="Action">
+                                        <th mat-header-cell *matHeaderCellDef> Action </th>
+                                        <td mat-cell *matCellDef="let element">
+                                            <button mat-button><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                            <button mat-button><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </td>
+                                    </ng-container>
+
+                                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+
+                <div class="row mt-5">
+                    <div class="row mt-3">
+                        <div class="col-4">
+                            <label>Total Gross Weight <span class="astrick">*</span></label>
+                            <div class="form-group mt-2 ">
+                                <select required id="Filter" name="filter" class="form-select form-control">
+                                    <option value="">Select your option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <label>Total Net Weight <span class="astrick">*</span> </label>
+                            <div class="form-group mt-2">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <label>Total Appraisal Amount <span class="astrick">*</span> </label>
+                            <div class="form-group mt-2">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-4">
+                            <label>Total Lendable Amount <span class="astrick">*</span> </label>
+                            <div class="form-group mt-2">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="d-flex justify-content-end flex-wrap">
+                        <button class="btn" mat-raised-button>Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

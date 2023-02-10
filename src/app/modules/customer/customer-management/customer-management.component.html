@@ -1,0 +1,255 @@
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mt-2">
+        <span class="fs-5">Customer Creation</span>
+        <button class="btn border border-secondary">Back</button>
+    </div>
+    <hr>
+    <form [formGroup]="customDetailsForm">
+        <div class="row  justify-content-between mt-3">
+            <div>
+                <span class="fs-6 my-2">Customer Details</span>
+                <hr>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="branchId" class="d-block ms-1 required">Branch ID</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="branchId" placeholder="Select" required>
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <mat-label for="Prefix" class="d-block ms-1 required">Prefix</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="Prefix" placeholder="Select">
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                    <mat-hint></mat-hint>
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="FirstName" class="d-block ms-1 required">First Name</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <input matInput placeholder="Enter" id="FirstName">
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="LastName" class="d-block ms-1">Last Name</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <input matInput placeholder="Enter" id="LastName">
+                </mat-form-field>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <mat-label for="gender" class="d-block ms-1 required">Gender</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="gender" placeholder="Select" required>
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="DOB" class="d-block ms-1 required">DOB</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <input matInput placeholder="Enter" id="DOB">
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="Age(yrs)" class="d-block ms-1 ">Age(yrs)</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <input matInput placeholder="Enter" id="Age(yrs)">
+                </mat-form-field>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <mat-label for="MaritalStatus" class="d-block ms-1 ">Marital Status</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="MaritalStatus" placeholder="Select">
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="CustomerStatus" class="d-block ms-1 required">Customer Status</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="CustomerStatus" placeholder="Select">
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="Occupations" class="d-block ms-1 required">Occupations</mat-label>
+                <mat-form-field appearance="fill" class="w-100 ">
+                    <mat-select id="Occupations" placeholder="Select">
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="AnnualIncome" class="d-block ms-1 ">Annual Income</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="AnnualIncome" placeholder="Select">
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="Caste" class="d-block ms-1 ">Caste</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="Caste" placeholder="Select">
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+        </div>
+
+
+        <div class="row  justify-content-between mt-3">
+            <div>
+                <span class="fs-6 my-2">Address</span>
+                <hr>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="Country" class="d-block ms-1 required">Country</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="Country" placeholder="Select" required>
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="State" class="d-block ms-1 required">State</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="State" placeholder="Select" required>
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="Distict" class="d-block ms-1 required">Distict</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="Distict" placeholder="Select" required>
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="Taluka" class="d-block ms-1 required">Taluka</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="Taluka" placeholder="Select" required>
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <mat-label for="City/Village" class="d-block ms-1 required">City/Village</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="City/Village" placeholder="Select" required>
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="Area" class="d-block ms-1 required">Area</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="Area" placeholder="Select" required>
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="row  justify-content-between mt-3">
+            <div>
+                <span class="fs-6 my-2">Contact Details</span>
+                <hr>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <mat-label for="AadhaarNumber" class="d-block ms-1 required">Aadhaar Number</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <input matInput placeholder="Enter" id="AadhaarNumber">
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="EmailId" class="d-block ms-1 required">Email Id</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <input matInput placeholder="Enter" id="EmailId">
+                </mat-form-field>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <mat-label for="ResidentialPhoneNumber" class="d-block ms-1 required">Residential Phone
+                    Number</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <input matInput placeholder="Enter" id="ResidentialPhoneNumber">
+                </mat-form-field>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <mat-label for="PhoneNumber" class="d-block ms-1 required ">Phone Number</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <input matInput placeholder="Enter" id="mobileNumber" #mobileNumber formControlName="mobileNumber">
+                    <span matSuffix>
+                        <button type="button" [disabled]="mobileNumber.value.length!=10" class="btn custom-button"
+                            (click)="openOtpModal()">Send OTP</button>
+                    </span>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="row  justify-content-between mt-3">
+            <div>
+                <span class="fs-6 my-2">Nominee Details</span>
+                <hr>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="Name" class="d-block ms-1 required ">Name</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <input matInput placeholder="Enter" id=" Name">
+                </mat-form-field>
+            </div>
+            <div class="col-12 col-md-4">
+                <mat-label for="DOB" class="d-block ms-1 required ">DOB</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <input matInput placeholder="Enter" id=" DOB">
+                </mat-form-field>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <mat-label for="Relationship" class="d-block ms-1 required">Relationship</mat-label>
+                <mat-form-field appearance="fill" class="w-100">
+                    <mat-select id="Relationship" placeholder="Select" required>
+                        <mat-option value="Select">Select</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-between ">
+            <div class="col-12 col-md-2 my-2 my-md-0 text-center text-md-start">
+                <button type="button" class="btn cancle-button w-75">Cancel</button>
+            </div>
+            <div class="col-12 col-md-8 text-md-end">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-around">
+                        <button type="button" class="btn custom-button w-50 mx-2">Save & Print</button>
+                        <button type="button" class="btn custom-button w-50 mx-2">Save & Add Photo</button>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-around mt-md-0 mt-2">
+                        <button type="button" class="btn custom-button w-50 mx-2">Save & Add KYC</button>
+                        <button type="button" class="btn save-button w-50 ms-2">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

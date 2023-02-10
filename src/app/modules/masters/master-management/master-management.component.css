@@ -1,0 +1,20 @@
+/* table-with-content {
+    margin: 0;
+}
+
+.mat-cell,
+.mat-header-cell {
+    display: table-cell;
+    padding: 5px 10px;
+    line-break: unset;
+    vertical-align: middle;
+    word-break: break-word;
+    min-width: 125px;
+    max-width: 225px;
+}
+
+mat-icon {
+    height: 25px;
+    width: 28px;
+} */
+

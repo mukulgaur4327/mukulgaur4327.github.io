@@ -1,0 +1,14 @@
+.sidebar-custom {
+    width: 20%;
+    margin-left: 1%;
+}
+
+.main-content {
+    height: calc(100vh - 210px);
+    height: -moz-calc(100vh - 210px);
+    height: -webkit-calc(100vh - 210px);
+    margin-bottom: 5%;
+    width: 80% !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

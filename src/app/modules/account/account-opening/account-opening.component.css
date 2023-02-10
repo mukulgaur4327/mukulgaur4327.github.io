@@ -1,0 +1,95 @@
+container-fluid {
+    width: 90% !important;
+    background: #AEAEAE;
+    margin: 10% !important;
+}
+
+.heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #323232;
+}
+
+.accountHeading{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #323232;
+}
+
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #FFF3D9;
+    border-radius: 8px 8px 0px 0px;
+    height: 100%;
+}
+
+.mdc-text-field {
+    background-color: #fff !important;
+}
+
+mat-form-field+mat-form-field {
+    margin-left: 8px;
+}
+
+.actionButtonedit {
+    width: fit-content !important;
+    height: 25px;
+    background: #910100;
+    border-radius: 6px;
+    color: #fff;
+    margin-top: 5%;
+}
+
+.actionButtondelete {
+    width: fit-content !important;
+    height: 25px;
+    background: #323232;
+    border-radius: 6px;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 5%;
+}
+
+i{
+    color: #fff;
+}
+
+.tablebtn{
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* tr:nth-child(odd) {
+    background-color: #F6F5F5;
+  } */
+
+  th{
+    background-color: #323232;
+    color: white;
+    padding: 10px;
+    height: 50px;
+  }

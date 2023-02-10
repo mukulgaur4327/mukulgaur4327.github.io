@@ -1,0 +1,13 @@
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #323232;
+}

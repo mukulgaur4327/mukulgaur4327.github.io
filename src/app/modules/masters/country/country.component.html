@@ -1,0 +1,39 @@
+<app-search></app-search>
+<table mat-table class="mat-elevation-z8 common-table" [dataSource]="dS">
+    <!--- Note that these columns can be defined in any order.
+      The actual rendered columns are set as a property on the row definition" -->
+    <ng-container matColumnDef="serialNo">
+        <th mat-header-cell *matHeaderCellDef>Sr No.</th>
+        <td mat-cell *matCellDef="let element; let i = index">
+            {{ i + 1 }}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="country">
+        <th mat-header-cell *matHeaderCellDef>Country</th>
+        <td mat-cell *matCellDef="let element">
+            {{ element.country? element.country:"N/A" }}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="isActive">
+        <th mat-header-cell *matHeaderCellDef>Is Active</th>
+        <td mat-cell *matCellDef="let element">
+            <label class="checkboxContainer login-checkbox-with-label">
+                <input  type="checkbox" [ngModel]="element.isActive" (ngModelChange)="onChange($event)">
+                <span class="checkmark"></span>
+            </label>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Action">
+        <th mat-header-cell *matHeaderCellDef>Action</th>
+        <td mat-cell *matCellDef="let element">
+            <img class="edit-icon" alt="edit" src="assets/images/edit.png" (click)="edit(element)">
+            <img class="delete-icon" alt="delete" src="assets/images/delete.png" (click)="delete(element)">
+        </td>
+    </ng-container>
+
+    <tr class="table-columns" mat-header-row *matHeaderRowDef="displayColumns"></tr>
+    <tr class="table-columns-data" mat-row *matRowDef="let row; columns: displayColumns"></tr>
+</table>
